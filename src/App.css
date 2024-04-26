@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Global styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Roulette table */
+.roulette-table {
+  width: 80%;
+  height: 400px;
+  background-color: #2c3e50;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+/* Pirate flag */
+.pirate-flag {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+/* Pirate logo */
+.pirate-logo {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+/* Roulette wheel */
+.roulette-wheel {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+/* Bet area */
+.bet-area {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+/* Bet button */
+.bet-button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Result */
+.result {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* History panel */
+.history-panel {
+  width: 80%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* History item */
+.history-item {
+  margin-bottom: 5px;
 }
